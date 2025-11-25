@@ -1,0 +1,43 @@
+&CONTROL
+    calculation   = 'scf',
+    prefix        = 'Ni3Al',
+    outdir        = './tmp/',
+    pseudo_dir    = './',
+    verbosity     = 'high',
+/
+&SYSTEM
+    ibrav         = 0,
+    nat           = 4,
+    ntyp          = 2,
+    ecutwfc       = 50,
+    ecutrho       = 400,
+    occupations   = 'smearing',
+    smearing      = 'mp',
+    degauss       = 0.02,
+    nspin         = 2,
+    starting_magnetization(1) = 0.6,
+    starting_magnetization(2) = 0.0,
+/
+&ELECTRONS
+    conv_thr      = 1.0d-6,
+    electron_maxstep = 60,
+    mixing_beta   = 0.30,
+/
+ATOMIC_SPECIES
+ Ni  58.6934  Ni.UPF
+ Al  26.9815  Al.UPF
+
+CELL_PARAMETERS angstrom
+ -1.96307837  -0.39553100   1.96307837
+  0.39553100   1.96307837   1.96307837
+ -1.96307837   1.96307837  -0.39553100
+
+ATOMIC_POSITIONS (crystal)
+ Ni  0.0000000000  0.0000000000  0.0000000000
+ Ni  0.5000000000  0.5000000000  0.0000000000
+ Ni  0.5000000000  0.0000000000  0.5000000000
+ Al  0.0000000000  0.5000000000  0.5000000000
+
+K_POINTS automatic
+ 8 8 8 0 0 0
+
