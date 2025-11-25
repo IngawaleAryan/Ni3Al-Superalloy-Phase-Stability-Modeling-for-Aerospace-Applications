@@ -1,0 +1,2 @@
+# Ni3Al-Superalloy-Phase-Stability-Modeling-for-Aerospace-Applications
+This repository details the DFT/ICME analysis of the gamma-Ni_3Al superalloy phase for high-temperature aerospace applications. It validates the material's structural and electronic stability by determining the ground state energy and equilibrium lattice parameters, essential for material qualification and advanced structural design.
